@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://6wkp5m064iwl"]
+[gd_scene load_steps=6 format=4 uid="uid://bdoc563hsfr7m"]
 
-[ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_3jcdq"]
-[ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_7jigo"]
-[ext_resource type="PackedScene" uid="uid://cmixdu2f1dr6e" path="res://platform.tscn" id="3_6msqt"]
+[ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
+[ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_i17ee"]
+[ext_resource type="PackedScene" uid="uid://cmixdu2f1dr6e" path="res://platform.tscn" id="3_l4bcc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcv78"]
-texture = ExtResource("2_7jigo")
+texture = ExtResource("2_i17ee")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -180,7 +180,7 @@ sources/0 = SubResource("TileSetAtlasSource_qcv78")
 [node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="."]
 position = Vector2(-376, 9)
 scale = Vector2(0.531079, 0.608414)
-texture = ExtResource("1_3jcdq")
+texture = ExtResource("1_pcofo")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_wyded")
@@ -191,5 +191,5 @@ use_parent_material = true
 tile_map_data = PackedByteArray("AADZ////AAAHAAEAAADa////AAAHAAEAAADc////AAAGAAAAAADb////AAAHAAEAAADd////AAAHAAEAAADe////AAAGAAAAAADf////AAAGAAAAAADZ/wAAAAAGAAEAAADa/wAAAAAGAAEAAADb/wAAAAAGAAEAAADd/wAAAAAGAAEAAADe/wAAAAAGAAEAAADf/wAAAAAGAAEAAADZ/wEAAAAGAAEAAADa/wEAAAAGAAEAAADb/wEAAAAGAAEAAADc/wEAAAAGAAEAAADd/wEAAAAGAAEAAADe/wEAAAAGAAEAAADf/wEAAAAGAAEAAADZ/wIAAAAGAAEAAADa/wIAAAAGAAEAAADd/wIAAAAGAAEAAADc/wIAAAAGAAEAAADe/wIAAAAGAAEAAADf/wIAAAAGAAEAAADZ/wMAAAAGAAEAAADa/wMAAAAGAAEAAADc/wMAAAAGAAEAAADb/wMAAAAGAAEAAADe/wMAAAAGAAEAAADf/wMAAAAGAAEAAADZ/wQAAAAGAAEAAADa/wQAAAAGAAEAAADc/wQAAAAGAAEAAADd/wQAAAAGAAEAAADe/wQAAAAGAAEAAADf/wQAAAAGAAEAAADb/wQAAAAIAAEAAADd/wMAAAAIAAEAAADb/wIAAAAIAAEAAADc/wAAAAAIAAEAAADe//7/AAAIAAMAAADg////AAAJAAEAAADh////AAAKAAEAAADi////AAAKAAEAAADj////AAAKAAEAAADk////AAAKAAEAAADl////AAALAAEAAADm////AAAHAAAAAADn////AAAHAAAAAADo////AAAHAAAAAADm/wAAAAAGAAEAAADn/wAAAAAGAAEAAADo/wAAAAAGAAEAAADm/wIAAAAGAAEAAADm/wEAAAAIAAEAAADo/wEAAAAGAAEAAADn/wEAAAAIAAEAAADn/wIAAAAGAAEAAADo/wIAAAAIAAEAAADm/wMAAAAGAAEAAADn/wMAAAAIAAEAAADo/wMAAAAGAAEAAADm/wQAAAAGAAEAAADn/wQAAAAGAAEAAADo/wQAAAAGAAEAAADr//7/AAAHAAEAAADs//7/AAAHAAEAAADu//7/AAAHAAEAAADt//7/AAAHAAEAAADr////AAAGAAEAAADt////AAAGAAIAAADs////AAAGAAEAAADv////AAAGAAEAAADu////AAAGAAEAAADr/wAAAAAGAAEAAADs/wAAAAAGAAEAAADt/wAAAAAGAAEAAADv/wAAAAAGAAEAAADu/wAAAAAGAAEAAADr/wEAAAAGAAIAAADs/wEAAAAGAAIAAADu/wEAAAAIAAEAAADt/wEAAAAIAAEAAADv/wEAAAAIAAEAAADv//7/AAAHAAAAAADy//7/AAAHAAEAAADz//7/AAAGAAAAAAD0//7/AAAHAAEAAAD1//7/AAAHAAEAAADy////AAAGAAEAAADz////AAAGAAEAAAD0////AAAGAAEAAAD1////AAAGAAEAAADy/wAAAAAGAAEAAADz/wAAAAAGAAEAAAD0/wAAAAAGAAEAAAD2/wAAAAAGAAEAAAD1/wAAAAAGAAEAAAD2////AAAGAAEAAADy/wEAAAAGAAEAAADz/wEAAAAGAAEAAAD0/wEAAAAGAAEAAAD2/wEAAAAGAAEAAAD1/wEAAAAGAAEAAAD2//7/AAAGAAAAAAD0//3/AAAGAAUAAAD0//z/AAAGAAQAAAD0//v/AAAGAAQAAAD0//r/AAAGAAQAAAD0//n/AAAGAAMAAADu//3/AAAIAAQAAAA=")
 tile_set = SubResource("TileSet_wyded")
 
-[node name="platform" parent="." instance=ExtResource("3_6msqt")]
+[node name="platform" parent="." instance=ExtResource("3_l4bcc")]
 position = Vector2(-128, -28)
