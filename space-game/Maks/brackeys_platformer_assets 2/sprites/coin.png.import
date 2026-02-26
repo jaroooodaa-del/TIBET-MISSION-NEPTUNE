@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqip15wvmjrlw"
-path="res://.godot/imported/download (3).jpeg-bb1c2a33883679e5c81e62e69fccce0e.ctex"
+uid="uid://u3imj2ik1owt"
+path="res://.godot/imported/coin.png-4908f6f5e8dd1bebb9383d3d57a4ebe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spaceships_vol2/download (3).jpeg"
-dest_files=["res://.godot/imported/download (3).jpeg-bb1c2a33883679e5c81e62e69fccce0e.ctex"]
+source_file="res://Maks/brackeys_platformer_assets 2/sprites/coin.png"
+dest_files=["res://.godot/imported/coin.png-4908f6f5e8dd1bebb9383d3d57a4ebe1.ctex"]
 
 [params]
 

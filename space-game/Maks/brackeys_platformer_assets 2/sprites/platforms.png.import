@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqip15wvmjrlw"
-path="res://.godot/imported/download (3).jpeg-bb1c2a33883679e5c81e62e69fccce0e.ctex"
+uid="uid://ku616ipyup3f"
+path="res://.godot/imported/platforms.png-93cf84728de2c4e4ceb73536de772660.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spaceships_vol2/download (3).jpeg"
-dest_files=["res://.godot/imported/download (3).jpeg-bb1c2a33883679e5c81e62e69fccce0e.ctex"]
+source_file="res://Maks/brackeys_platformer_assets 2/sprites/platforms.png"
+dest_files=["res://.godot/imported/platforms.png-93cf84728de2c4e4ceb73536de772660.ctex"]
 
 [params]
 
