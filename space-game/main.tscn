@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://spaceships_vol2/stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_1i3fl"]
 
-[node name="Background" type="Node2D"]
+[node name="node 2d" type="Node2D"]
 
 [node name="StarsGlareSpaceDarkBlueSkyBackground4kHdSpace" type="Sprite2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(12, 13)
 texture = ExtResource("1_1i3fl")

@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://dakd1ptbwd00j"]
+[gd_scene load_steps=2 format=3 uid="uid://dakd1ptbwd00j"]
 
 [ext_resource type="Texture2D" uid="uid://d0wb6n2h1h5uw" path="res://spaceships_vol2/SVG/RED/spaceships-project_large_1.svg" id="1_2qm22"]
 
-[node name="Node2D" type="Node2D" unique_id=1595318432]
+[node name="Node2D" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1064489426]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
-[node name="SpaceshipsProjectLarge1" type="Sprite2D" parent="." unique_id=544008652]
+[node name="SpaceshipsProjectLarge1" type="Sprite2D" parent="."]
 position = Vector2(1850, 1285)
 texture = ExtResource("1_2qm22")

@@ -1,9 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://benvtpojeq4tj"]
+[gd_scene load_steps=7 format=3 uid="uid://benvtpojeq4tj"]
 
 [ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://spaceships_vol2/stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_0g2x0"]
+[ext_resource type="Texture2D" uid="uid://b5wmw8rph1y8l" path="res://Patrick/Screenshot 2026-02-26 at 12.13.24.png" id="2_38ew4"]
+[ext_resource type="Texture2D" uid="uid://gy1v1s1nd0dd" path="res://Patrick/Screenshot 2026-02-26 at 12.08.34.png" id="3_r5q4g"]
+[ext_resource type="Texture2D" uid="uid://d0r88l7kb2p0c" path="res://Patrick/Screenshot 2026-02-26 at 12.09.51.png" id="4_rmnsa"]
+[ext_resource type="Texture2D" uid="uid://xcundvexdi2t" path="res://Patrick/Screenshot 2026-02-26 at 12.10.06.png" id="5_buure"]
+[ext_resource type="Texture2D" uid="uid://csnwsvqce8ipo" path="res://Patrick/Screenshot 2026-02-26 at 12.15.26.png" id="6_ikdai"]
 
 [node name="StartScene" type="Node2D"]
 
 [node name="StarsGlareSpaceDarkBlueSkyBackground4kHdSpace" type="Sprite2D" parent="."]
-position = Vector2(1716, 533)
+position = Vector2(-1.00037, 1)
+scale = Vector2(0.671615, 0.967593)
 texture = ExtResource("1_0g2x0")
+
+[node name="Screenshot2026-02-26At12_13_24" type="Sprite2D" parent="."]
+position = Vector2(-6.99998, 40.25)
+scale = Vector2(1.98397, 2.40417)
+texture = ExtResource("2_38ew4")
+
+[node name="Screenshot2026-02-26At12_08_34" type="Sprite2D" parent="."]
+position = Vector2(-563, -27)
+texture = ExtResource("3_r5q4g")
+
+[node name="Screenshot2026-02-26At12_09_51" type="Sprite2D" parent="."]
+position = Vector2(-5, -3)
+texture = ExtResource("4_rmnsa")
+
+[node name="Screenshot2026-02-26At12_10_06" type="Sprite2D" parent="."]
+position = Vector2(537, -26)
+texture = ExtResource("5_buure")
+
+[node name="Screenshot2026-02-26At12_15_26" type="Sprite2D" parent="."]
+position = Vector2(-8.99997, -707)
+scale = Vector2(1.87722, 1.83439)
+texture = ExtResource("6_ikdai")

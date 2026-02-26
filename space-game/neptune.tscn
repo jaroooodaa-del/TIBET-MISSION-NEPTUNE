@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 [gd_scene format=4 uid="uid://6wkp5m064iwl"]
+=======
+<<<<<<< HEAD
+[gd_scene load_steps=5 format=3 uid="uid://bo33q64213o65"]
+=======
+[gd_scene load_steps=5 format=4 uid="uid://6wkp5m064iwl"]
+>>>>>>> 2e5afb1552a688727db7b052fac3b068869f92ab
+>>>>>>> e2d149de5470c210317fb574fb825d45fd134d6f
 
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_3jcdq"]
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_7jigo"]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bvt32lsrrvamt" path="res://jared/Gemini_Generated_Image_v5uk3ov5uk3ov5uk-removebg-preview.png" id="1_8g6sl"]
 [ext_resource type="Texture2D" uid="uid://c3ukfh35q6630" path="res://jared/Gemini_Generated_Image_byq0adbyq0adbyq0 (1).png" id="2_6bds2"]
+[ext_resource type="Texture2D" uid="uid://c8dcims4hvr5k" path="res://jared/Gemini_Generated_Image_jozovujozovujozo.png" id="3_6bds2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_io7gs"]
 atlas = ExtResource("1_8g6sl")
@@ -55,6 +56,30 @@ region = Rect2(680, 204, 170, 204)
 atlas = ExtResource("2_6bds2")
 region = Rect2(850, 204, 170, 204)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_a1kwu"]
+atlas = ExtResource("3_6bds2")
+region = Rect2(0, 0, 170, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aij5m"]
+atlas = ExtResource("3_6bds2")
+region = Rect2(170, 0, 170, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxiel"]
+atlas = ExtResource("3_6bds2")
+region = Rect2(340, 0, 170, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b0pg"]
+atlas = ExtResource("3_6bds2")
+region = Rect2(510, 0, 170, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abvbm"]
+atlas = ExtResource("3_6bds2")
+region = Rect2(680, 0, 170, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8udve"]
+atlas = ExtResource("3_6bds2")
+region = Rect2(850, 0, 170, 256)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_abvbm"]
 animations = [{
 "frames": [{
@@ -96,6 +121,24 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2xaqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a1kwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aij5m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxiel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b0pg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abvbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8udve")
 }],
 "loop": true,
 "name": &"default",
@@ -108,4 +151,10 @@ animations = [{
 position = Vector2(1, -53.5)
 scale = Vector2(0.24444446, 0.26717556)
 sprite_frames = SubResource("SpriteFrames_abvbm")
-frame_progress = 0.5396394
+frame_progress = 0.60601085
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1588824051]
+position = Vector2(1, -53.5)
+scale = Vector2(0.24444446, 0.26717556)
+sprite_frames = SubResource("SpriteFrames_abvbm")
+frame_progress = 0.8798142
