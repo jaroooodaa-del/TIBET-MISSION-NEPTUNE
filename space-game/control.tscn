@@ -1,0 +1,94 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3ivimyhn3xe8"]
+
+[ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://spaceships_vol2/stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_11s3k"]
+[ext_resource type="Texture2D" uid="uid://csnwsvqce8ipo" path="res://Patrick/Screenshot 2026-02-26 at 12.15.26.png" id="2_3kcqa"]
+[ext_resource type="Texture2D" uid="uid://b5wmw8rph1y8l" path="res://Patrick/Screenshot 2026-02-26 at 12.13.24.png" id="3_3fsdt"]
+[ext_resource type="Texture2D" uid="uid://gy1v1s1nd0dd" path="res://Patrick/Screenshot 2026-02-26 at 12.08.34.png" id="4_56k4c"]
+[ext_resource type="FontFile" uid="uid://cv0krppm7bgs" path="res://Patrick/Pixeloid_Font_1_0/TrueType (.ttf)/PixeloidMono.ttf" id="5_h62xg"]
+[ext_resource type="Texture2D" uid="uid://d0r88l7kb2p0c" path="res://Patrick/Screenshot 2026-02-26 at 12.09.51.png" id="6_kjilf"]
+[ext_resource type="Texture2D" uid="uid://xcundvexdi2t" path="res://Patrick/Screenshot 2026-02-26 at 12.10.06.png" id="7_8u3sh"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StarsGlareSpaceDarkBlueSkyBackground4kHdSpace" type="Sprite2D" parent="."]
+position = Vector2(57.5, 28)
+scale = Vector2(0.754948, 1)
+texture = ExtResource("1_11s3k")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(-32, -724)
+scale = Vector2(1.66548, 2.05096)
+texture = ExtResource("2_3kcqa")
+
+[node name="GreyBackground" type="Sprite2D" parent="."]
+position = Vector2(-15, 91)
+scale = Vector2(2.04274, 1.82778)
+texture = ExtResource("3_3fsdt")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GreyBackground"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Neptune-02-26At12_08_34" type="Sprite2D" parent="GreyBackground/HBoxContainer"]
+position = Vector2(-266.31, -30.0912)
+scale = Vector2(0.48954, 0.547112)
+texture = ExtResource("4_56k4c")
+
+[node name="Label" type="Label" parent="GreyBackground/HBoxContainer/Neptune-02-26At12_08_34"]
+offset_left = -157.0
+offset_top = 204.0
+offset_right = 263.0
+offset_bottom = 314.0
+theme_override_fonts/font = ExtResource("5_h62xg")
+theme_override_font_sizes/font_size = 67
+text = "NEPTUNE"
+
+[node name="Button" type="Button" parent="GreyBackground/HBoxContainer/Neptune-02-26At12_08_34/Label"]
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 322.0
+offset_bottom = 72.0
+
+[node name="Uranus" type="Sprite2D" parent="GreyBackground/HBoxContainer"]
+position = Vector2(-4.89541, -32.8267)
+scale = Vector2(0.48954, 0.547112)
+texture = ExtResource("6_kjilf")
+
+[node name="Label" type="Label" parent="GreyBackground/HBoxContainer/Uranus"]
+offset_left = -131.0
+offset_top = 217.0
+offset_right = 137.0
+offset_bottom = 299.0
+theme_override_fonts/font = ExtResource("5_h62xg")
+theme_override_font_sizes/font_size = 67
+text = "URANUS"
+
+[node name="Button" type="Button" parent="GreyBackground/HBoxContainer/Uranus/Label"]
+layout_mode = 0
+offset_left = -5.0
+offset_right = 266.0
+offset_bottom = 75.0
+
+[node name="Astroid" type="Sprite2D" parent="GreyBackground/HBoxContainer"]
+position = Vector2(275.121, -21.8845)
+scale = Vector2(0.48954, 0.547112)
+texture = ExtResource("7_8u3sh")
+
+[node name="Label" type="Label" parent="GreyBackground/HBoxContainer/Astroid"]
+offset_left = -240.0
+offset_top = 192.0
+offset_right = 251.0
+offset_bottom = 274.0
+theme_override_fonts/font = ExtResource("5_h62xg")
+theme_override_font_sizes/font_size = 67
+text = "KUIPER BELT"
+
+[node name="Button" type="Button" parent="GreyBackground/HBoxContainer/Astroid/Label"]
+layout_mode = 0
+offset_left = -3.0
+offset_right = 491.0
+offset_bottom = 80.0
