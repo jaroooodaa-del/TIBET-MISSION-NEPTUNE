@@ -1,11 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://cax8ytme4nv81"]
+[gd_scene load_steps=5 format=4 uid="uid://7n3n4nxgrxrg"]
 
-[ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
-[ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_i17ee"]
-[ext_resource type="PackedScene" path="res://platform.tscn" id="3_l4bcc"]
+[ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="1_2i62u"]
+[ext_resource type="Texture2D" uid="uid://b2tjsrl3tefk1" path="res://Patrick/wmremove-transformed.jpg" id="1_oe65y"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcv78"]
-texture = ExtResource("2_i17ee")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o4377"]
+texture = ExtResource("1_2i62u")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -171,25 +170,23 @@ texture = ExtResource("2_i17ee")
 2:15/0 = 0
 3:15/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_wyded"]
+[sub_resource type="TileSet" id="TileSet_mbffi"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_qcv78")
+sources/0 = SubResource("TileSetAtlasSource_o4377")
 
-[node name="Neptune" type="Node2D"]
+[node name="Uranus" type="Node2D"]
 
-[node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="."]
-position = Vector2(-376, 9)
-scale = Vector2(0.531079, 0.608414)
-texture = ExtResource("1_pcofo")
+[node name="Wmremove-transformed" type="Sprite2D" parent="."]
+position = Vector2(3, 0)
+scale = Vector2(4, 4)
+texture = ExtResource("1_oe65y")
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_wyded")
+position = Vector2(-85, 19)
+tile_set = SubResource("TileSet_mbffi")
 format = 2
 
 [node name="Layer1" type="TileMapLayer" parent="TileMap"]
 use_parent_material = true
-tile_map_data = PackedByteArray("AADZ////AAAHAAEAAADa////AAAHAAEAAADc////AAAGAAAAAADb////AAAHAAEAAADd////AAAHAAEAAADe////AAAGAAAAAADf////AAAGAAAAAADZ/wAAAAAGAAEAAADa/wAAAAAGAAEAAADb/wAAAAAGAAEAAADd/wAAAAAGAAEAAADe/wAAAAAGAAEAAADf/wAAAAAGAAEAAADZ/wEAAAAGAAEAAADa/wEAAAAGAAEAAADb/wEAAAAGAAEAAADc/wEAAAAGAAEAAADd/wEAAAAGAAEAAADe/wEAAAAGAAEAAADf/wEAAAAGAAEAAADZ/wIAAAAGAAEAAADa/wIAAAAGAAEAAADd/wIAAAAGAAEAAADc/wIAAAAGAAEAAADe/wIAAAAGAAEAAADf/wIAAAAGAAEAAADZ/wMAAAAGAAEAAADa/wMAAAAGAAEAAADc/wMAAAAGAAEAAADb/wMAAAAGAAEAAADe/wMAAAAGAAEAAADf/wMAAAAGAAEAAADZ/wQAAAAGAAEAAADa/wQAAAAGAAEAAADc/wQAAAAGAAEAAADd/wQAAAAGAAEAAADe/wQAAAAGAAEAAADf/wQAAAAGAAEAAADb/wQAAAAIAAEAAADd/wMAAAAIAAEAAADb/wIAAAAIAAEAAADc/wAAAAAIAAEAAADe//7/AAAIAAMAAADg////AAAJAAEAAADh////AAAKAAEAAADi////AAAKAAEAAADj////AAAKAAEAAADk////AAAKAAEAAADl////AAALAAEAAADm////AAAHAAAAAADn////AAAHAAAAAADo////AAAHAAAAAADm/wAAAAAGAAEAAADn/wAAAAAGAAEAAADo/wAAAAAGAAEAAADm/wIAAAAGAAEAAADm/wEAAAAIAAEAAADo/wEAAAAGAAEAAADn/wEAAAAIAAEAAADn/wIAAAAGAAEAAADo/wIAAAAIAAEAAADm/wMAAAAGAAEAAADn/wMAAAAIAAEAAADo/wMAAAAGAAEAAADm/wQAAAAGAAEAAADn/wQAAAAGAAEAAADo/wQAAAAGAAEAAADr//7/AAAHAAEAAADs//7/AAAHAAEAAADu//7/AAAHAAEAAADt//7/AAAHAAEAAADr////AAAGAAEAAADt////AAAGAAIAAADs////AAAGAAEAAADv////AAAGAAEAAADu////AAAGAAEAAADr/wAAAAAGAAEAAADs/wAAAAAGAAEAAADt/wAAAAAGAAEAAADv/wAAAAAGAAEAAADu/wAAAAAGAAEAAADr/wEAAAAGAAIAAADs/wEAAAAGAAIAAADu/wEAAAAIAAEAAADt/wEAAAAIAAEAAADv/wEAAAAIAAEAAADv//7/AAAHAAAAAADy//7/AAAHAAEAAADz//7/AAAGAAAAAAD0//7/AAAHAAEAAAD1//7/AAAHAAEAAADy////AAAGAAEAAADz////AAAGAAEAAAD0////AAAGAAEAAAD1////AAAGAAEAAADy/wAAAAAGAAEAAADz/wAAAAAGAAEAAAD0/wAAAAAGAAEAAAD2/wAAAAAGAAEAAAD1/wAAAAAGAAEAAAD2////AAAGAAEAAADy/wEAAAAGAAEAAADz/wEAAAAGAAEAAAD0/wEAAAAGAAEAAAD2/wEAAAAGAAEAAAD1/wEAAAAGAAEAAAD2//7/AAAGAAAAAAD0//3/AAAGAAUAAAD0//z/AAAGAAQAAAD0//v/AAAGAAQAAAD0//r/AAAGAAQAAAD0//n/AAAGAAMAAADu//3/AAAIAAQAAAA=")
-tile_set = SubResource("TileSet_wyded")
-
-[node name="platform" parent="." instance=ExtResource("3_l4bcc")]
-position = Vector2(-128, -28)
+tile_map_data = PackedByteArray("AADV//n/AAAHAAEAAADW//n/AAAHAAEAAADX//n/AAAHAAEAAADY//n/AAAHAAEAAADZ//n/AAAHAAEAAADa//r/AAAHAAEAAAA=")
+tile_set = SubResource("TileSet_mbffi")

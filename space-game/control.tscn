@@ -102,6 +102,6 @@ offset_right = 491.0
 offset_bottom = 80.0
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="GreyBackground/HBoxContainer/Neptune-02-26At12_08_34/Label/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GreyBackground/HBoxContainer/Neptune-02-26At12_08_34/Label/Button" to="." method="_on_neptune_button_pressed"]
 [connection signal="pressed" from="GreyBackground/HBoxContainer/Uranus/Label/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="GreyBackground/HBoxContainer/Astroid/Label/Button" to="." method="_on_button_pressed"]
