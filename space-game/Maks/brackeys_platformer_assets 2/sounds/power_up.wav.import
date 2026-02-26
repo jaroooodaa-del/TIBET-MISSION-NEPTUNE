@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqy4nx2oguwyv"
+path="res://.godot/imported/power_up.wav-179af585110c915f77822a49e2bc5a22.sample"
+
+[deps]
+
+source_file="res://Maks/brackeys_platformer_assets 2/sounds/power_up.wav"
+dest_files=["res://.godot/imported/power_up.wav-179af585110c915f77822a49e2bc5a22.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
