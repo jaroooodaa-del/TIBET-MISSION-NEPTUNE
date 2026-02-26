@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://6wkp5m064iwl"]
+[gd_scene load_steps=5 format=3 uid="uid://bo33q64213o65"]
 
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_3jcdq"]
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_7jigo"]
