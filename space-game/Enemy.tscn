@@ -1,21 +1,45 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6r2xb5ewfh11"]
+[gd_scene format=3 uid="uid://bhn3b14gh1piy"]
 
-[ext_resource type="Script" path="res://enemy.gd" id="1_2remx"]
-[ext_resource type="Texture2D" uid="uid://bglba8rubivju" path="res://spaceships_vol2/PNG/GREEN/large_1.png" id="1_087wm"]
+[ext_resource type="Texture2D" uid="uid://dqyqsimll0sgl" path="res://Maks/brackeys_platformer_assets 2/sprites/slime_green.png" id="1_5pesd"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhp5b"]
-size = Vector2(445, 980)
+[sub_resource type="AtlasTexture" id="AtlasTexture_mn1st"]
+atlas = ExtResource("1_5pesd")
+region = Rect2(0, 24, 24, 24)
 
-[node name="Enemy" type="Area2D"]
-script = ExtResource("1_2remx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3qpw"]
+atlas = ExtResource("1_5pesd")
+region = Rect2(24, 24, 24, 24)
 
-[node name="Large1" type="Sprite2D" parent="."]
-position = Vector2(632, 127)
-rotation = 3.14159
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_087wm")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubspt"]
+atlas = ExtResource("1_5pesd")
+region = Rect2(48, 24, 24, 24)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Large1"]
-position = Vector2(-7.5, 0)
-scale = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_hhp5b")
+[sub_resource type="AtlasTexture" id="AtlasTexture_rd83f"]
+atlas = ExtResource("1_5pesd")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wiheg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mn1st")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3qpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubspt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rd83f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wiheg")
+frame_progress = 0.233551

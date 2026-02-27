@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://benvtpojeq4tj"]
+[gd_scene load_steps=2 format=3 uid="uid://dsvg54u3t7eht"]
 
-[ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://spaceships_vol2/stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_0g2x0"]
+[ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_0g2x0"]
 
 [node name="StartScene" type="Node2D"]
 
