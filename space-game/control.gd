@@ -8,8 +8,8 @@ func _on_neptune_button_pressed():
 	get_tree().change_scene_to_file("res://Maks/neptune2.tscn")
 	
 
-#//func _on_uranus_button_pressed():
+#func _on_uranus_button_pressed():
 	#//get_tree().change_scene_to_file("res://levels/uranus.tscn")
 
-#//func _on_astroid_button_pressed():
+#func _on_astroid_button_pressed():
 	#//get_tree().change_scene_to_file("res://levels/kuiper_belt.tscn")

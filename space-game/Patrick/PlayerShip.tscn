@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvnqt6xaa1du1"]
+
+[ext_resource type="Script" path="res://Patrick/player_ship.gd" id="1_0o0g7"]
+[ext_resource type="Texture2D" uid="uid://fmhrel7wfmke" path="res://spaceships_vol2/PNG/BLUE/large_2.png" id="2_3gwt3"]
+[ext_resource type="Texture2D" uid="uid://n1aycbykxy2" path="res://spaceships_vol2/PNG/BLUE/laser_turret.png" id="3_xiiid"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3u2vu"]
+radius = 293.0
+height = 858.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-24, 0)
+script = ExtResource("1_0o0g7")
+
+[node name="Large2" type="Sprite2D" parent="."]
+position = Vector2(628, 526)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_3gwt3")
+
+[node name="LaserTurret" type="Sprite2D" parent="Large2"]
+position = Vector2(-2, 104)
+texture = ExtResource("3_xiiid")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Large2"]
+position = Vector2(-1, -39)
+shape = SubResource("CapsuleShape2D_3u2vu")
+
+[node name="Container" type="Container" parent="Large2"]
+offset_left = -1372.0
+offset_top = -939.0
+offset_right = -1332.0
+offset_bottom = -899.0
+
+[node name="Muzzle2D" type="Marker2D" parent="Large2/Container"]
+position = Vector2(1374, 928)
+
+[node name="Muzzle2D2" type="Marker2D" parent="Large2/Container"]
+position = Vector2(1122, 698)
+
+[node name="Muzzle2D3" type="Marker2D" parent="Large2/Container"]
+position = Vector2(1158, 751)
+
+[node name="Muzzle2D4" type="Marker2D" parent="Large2/Container"]
+position = Vector2(1589, 749)
+
+[node name="Muzzle2D5" type="Marker2D" parent="Large2/Container"]
+position = Vector2(1626, 706)
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true

@@ -1,9 +1,9 @@
-[gd_scene format=4 uid="uid://bdoc563hsfr7m"]
+[gd_scene load_steps=13 format=4 uid="uid://bdoc563hsfr7m"]
 
 [ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_6a7sl"]
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_i17ee"]
-[ext_resource type="PackedScene" path="res://platform.tscn" id="3_l4bcc"]
+[ext_resource type="PackedScene" uid="uid://cmixdu2f1dr6e" path="res://platform.tscn" id="3_l4bcc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcv78"]
 texture = ExtResource("2_i17ee")
@@ -176,9 +176,6 @@ texture = ExtResource("2_i17ee")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qcv78")
 
-[sub_resource type="Animation" id="Animation_8vnq1"]
-resource_name = "move platform"
-
 [sub_resource type="Animation" id="Animation_lc1l8"]
 length = 0.001
 tracks/0/type = "value"
@@ -223,6 +220,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_jdq5b"]
 resource_name = "move 2"
+
+[sub_resource type="Animation" id="Animation_8vnq1"]
+resource_name = "move platform"
 
 [sub_resource type="Animation" id="Animation_r6vlm"]
 resource_name = "sigma boiii"

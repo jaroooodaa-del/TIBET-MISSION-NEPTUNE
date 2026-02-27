@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d3ivimyhn3xe8"]
+[gd_scene load_steps=9 format=3 uid="uid://d3ivimyhn3xe8"]
 
 [ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://spaceships_vol2/stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_11s3k"]
 [ext_resource type="Script" path="res://control.gd" id="1_vx08d"]
@@ -52,6 +52,7 @@ text = "NEPTUNE"
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="GreyBackground/HBoxContainer/Neptune-02-26At12_08_34/Label"]
+layout_mode = 0
 offset_left = -8.0
 offset_top = 8.0
 offset_right = 322.0
