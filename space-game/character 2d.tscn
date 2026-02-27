@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://ciwn7fqk4j5ct"]
+[gd_scene load_steps=15 format=3 uid="uid://ciwn7fqk4j5ct"]
 
 [ext_resource type="Texture2D" uid="uid://donllujnbk4wn" path="res://jared/Download (2).png" id="1_0pyo8"]
 
@@ -94,15 +94,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wlj2w"]
-radius = 3.0
-height = 14.0
+[node name="CharacterBody2D" type="CharacterBody2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=123044144]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=166181494]
-position = Vector2(0, -2.0000002)
-scale = Vector2(0.24444446, 0.26717556)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.244444, 0.267176)
 sprite_frames = SubResource("SpriteFrames_abvbm")
 frame_progress = 0.606011
 
