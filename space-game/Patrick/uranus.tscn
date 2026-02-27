@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://oxhxd0gilxaa"]
+[gd_scene load_steps=10 format=4 uid="uid://oxhxd0gilxaa"]
 
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="1_2i62u"]
 [ext_resource type="Texture2D" uid="uid://b2tjsrl3tefk1" path="res://Patrick/wmremove-transformed.jpg" id="1_oe65y"]
 [ext_resource type="PackedScene" uid="uid://bhtofaohi1wps" path="res://jared/character (tibet).tscn" id="3_dqdr1"]
 [ext_resource type="PackedScene" uid="uid://dlxtetrb2ahyd" path="res://Maks/killzone.tscn" id="4_ftuvr"]
+[ext_resource type="PackedScene" uid="uid://m740vq3whku1" path="res://Maks/enemy 2.tscn" id="5_fwju5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o4377"]
 texture = ExtResource("1_2i62u")
@@ -265,3 +266,27 @@ position = Vector2(-464, 70)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(0, 2)
 shape = SubResource("WorldBoundaryShape2D_yafhd")
+
+[node name="Node2D" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(-28, -167)
+
+[node name="Node2D2" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(315, -160)
+
+[node name="Node2D3" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(685, -303)
+
+[node name="Node2D4" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(947, -180)
+
+[node name="Node2D5" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(1220, -180)
+
+[node name="Node2D6" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(1588, -180)
+
+[node name="Node2D7" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(1827, -180)
+
+[node name="Node2D8" parent="Killzone" instance=ExtResource("5_fwju5")]
+position = Vector2(1892, -232)
