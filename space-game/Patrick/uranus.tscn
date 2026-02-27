@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://oxhxd0gilxaa"]
+[gd_scene load_steps=7 format=4 uid="uid://oxhxd0gilxaa"]
 
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="1_2i62u"]
 [ext_resource type="Texture2D" uid="uid://b2tjsrl3tefk1" path="res://Patrick/wmremove-transformed.jpg" id="1_oe65y"]
+[ext_resource type="PackedScene" uid="uid://bhtofaohi1wps" path="res://jared/character (tibet).tscn" id="3_dqdr1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o4377"]
 texture = ExtResource("1_2i62u")
@@ -246,3 +247,10 @@ offset_right = 2217.0
 offset_bottom = -267.0
 text = "You might have to jump..."
 label_settings = SubResource("LabelSettings_htjuj")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_dqdr1")]
+position = Vector2(-733, -100)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-734, -98)
+zoom = Vector2(4, 4)

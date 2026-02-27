@@ -374,6 +374,7 @@ position = Vector2(-128, -27)
 libraries = {
 "": SubResource("AnimationLibrary_qu1oj")
 }
+autoplay = "RESET"
 
 [node name="platform2" parent="." instance=ExtResource("3_l4bcc")]
 position = Vector2(192, -37)
@@ -382,6 +383,7 @@ position = Vector2(192, -37)
 libraries = {
 "": SubResource("AnimationLibrary_4ktui")
 }
+autoplay = "RESET"
 
 [node name="platform3" parent="." instance=ExtResource("3_l4bcc")]
 position = Vector2(190, -2)
@@ -390,10 +392,10 @@ position = Vector2(190, -2)
 libraries = {
 "": SubResource("AnimationLibrary_heteb")
 }
+autoplay = "RESET"
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("5_kjqlq")]
 position = Vector2(-584, -23)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-585, -23)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(4, 4)
