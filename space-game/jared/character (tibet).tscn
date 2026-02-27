@@ -29,6 +29,11 @@ region = Rect2(96, 64, 48, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_abvbm"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"jump_anim",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_036e2")
@@ -69,7 +74,7 @@ script = ExtResource("1_bgtd3")
 position = Vector2(0, -2)
 scale = Vector2(0.244444, 0.267176)
 sprite_frames = SubResource("SpriteFrames_abvbm")
-animation = &"move_right_anim"
+animation = &"jump_anim"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1628034454]
 shape = SubResource("CapsuleShape2D_wlj2w")
