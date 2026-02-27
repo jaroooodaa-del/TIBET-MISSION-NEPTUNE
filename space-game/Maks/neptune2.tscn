@@ -1,10 +1,11 @@
-[gd_scene load_steps=20 format=4 uid="uid://bdoc563hsfr7m"]
+[gd_scene load_steps=16 format=4 uid="uid://bdoc563hsfr7m"]
 
 [ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_6a7sl"]
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_i17ee"]
 [ext_resource type="PackedScene" uid="uid://cmixdu2f1dr6e" path="res://platform.tscn" id="3_l4bcc"]
 [ext_resource type="PackedScene" uid="uid://bhtofaohi1wps" path="res://jared/character (tibet).tscn" id="5_kjqlq"]
+[ext_resource type="PackedScene" uid="uid://dlxtetrb2ahyd" path="res://Maks/killzone.tscn" id="6_xqfgw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcv78"]
 texture = ExtResource("2_i17ee")
@@ -176,7 +177,23 @@ texture = ExtResource("2_i17ee")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qcv78")
 
-[sub_resource type="Animation" id="Animation_lc1l8"]
+[sub_resource type="Animation" id="Animation_sl4wg"]
+resource_name = "new_animation"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-128, -27), Vector2(-17, -27)]
+}
+
+[sub_resource type="Animation" id="Animation_1o8qy"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -190,42 +207,15 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(-128, -27)]
 }
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:disable_mode")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_itm77"]
+_data = {
+"RESET": SubResource("Animation_1o8qy"),
+"new_animation": SubResource("Animation_sl4wg")
 }
 
-[sub_resource type="Animation" id="Animation_ut3kr"]
-resource_name = "move"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:disable_mode")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [0, 0]
-}
-
-[sub_resource type="Animation" id="Animation_jdq5b"]
-resource_name = "move 2"
-
-[sub_resource type="Animation" id="Animation_8vnq1"]
-resource_name = "move platform"
-
-[sub_resource type="Animation" id="Animation_r6vlm"]
-resource_name = "sigma boiii"
+[sub_resource type="Animation" id="Animation_gynqo"]
+resource_name = "new_animation"
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -237,19 +227,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-128, -27), Vector2(-22, -26)]
+"values": [Vector2(192, -37), Vector2(505, -35)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qu1oj"]
-_data = {
-"RESET": SubResource("Animation_lc1l8"),
-"move": SubResource("Animation_ut3kr"),
-"move 2": SubResource("Animation_jdq5b"),
-"move platform": SubResource("Animation_8vnq1"),
-"sigma boiii": SubResource("Animation_r6vlm")
-}
-
-[sub_resource type="Animation" id="Animation_3jfg3"]
+[sub_resource type="Animation" id="Animation_nu0oy"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -264,64 +245,14 @@ tracks/0/keys = {
 "values": [Vector2(192, -37)]
 }
 
-[sub_resource type="Animation" id="Animation_xsf02"]
-resource_name = "Sigma boy skibidi toilet"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(192, -37), Vector2(503, -41)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4ktui"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6r867"]
 _data = {
-"RESET": SubResource("Animation_3jfg3"),
-"Sigma boy skibidi toilet": SubResource("Animation_xsf02")
+"RESET": SubResource("Animation_nu0oy"),
+"new_animation": SubResource("Animation_gynqo")
 }
 
-[sub_resource type="Animation" id="Animation_wsvbl"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(190, -2)]
-}
-
-[sub_resource type="Animation" id="Animation_gr2ga"]
-resource_name = "simga bpiiii"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(190, -2), Vector2(513, -5)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_heteb"]
-_data = {
-"RESET": SubResource("Animation_wsvbl"),
-"simga bpiiii": SubResource("Animation_gr2ga")
-}
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2jcpq"]
+distance = -110.0
 
 [node name="Neptune" type="Node2D"]
 
@@ -372,28 +303,28 @@ position = Vector2(-128, -27)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platform"]
 libraries = {
-"": SubResource("AnimationLibrary_qu1oj")
+"": SubResource("AnimationLibrary_itm77")
 }
+autoplay = "new_animation"
 
 [node name="platform2" parent="." instance=ExtResource("3_l4bcc")]
 position = Vector2(192, -37)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platform2"]
 libraries = {
-"": SubResource("AnimationLibrary_4ktui")
+"": SubResource("AnimationLibrary_6r867")
 }
-
-[node name="platform3" parent="." instance=ExtResource("3_l4bcc")]
-position = Vector2(190, -2)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="platform3"]
-libraries = {
-"": SubResource("AnimationLibrary_heteb")
-}
+autoplay = "new_animation"
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("5_kjqlq")]
 position = Vector2(-584, -23)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-585, -23)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-1, 0)
 zoom = Vector2(4, 4)
+
+[node name="Killzone" parent="." instance=ExtResource("6_xqfgw")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-503, 89)
+shape = SubResource("WorldBoundaryShape2D_2jcpq")
