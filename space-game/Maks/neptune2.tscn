@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://bdoc563hsfr7m"]
+[gd_scene load_steps=19 format=4 uid="uid://bdoc563hsfr7m"]
 
 [ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_6a7sl"]
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
@@ -176,9 +176,6 @@ texture = ExtResource("2_i17ee")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qcv78")
 
-[sub_resource type="Animation" id="Animation_8vnq1"]
-resource_name = "move platform"
-
 [sub_resource type="Animation" id="Animation_lc1l8"]
 length = 0.001
 tracks/0/type = "value"
@@ -224,6 +221,9 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_jdq5b"]
 resource_name = "move 2"
 
+[sub_resource type="Animation" id="Animation_8vnq1"]
+resource_name = "move platform"
+
 [sub_resource type="Animation" id="Animation_r6vlm"]
 resource_name = "sigma boiii"
 loop_mode = 2
@@ -249,11 +249,100 @@ _data = {
 "sigma boiii": SubResource("Animation_r6vlm")
 }
 
+[sub_resource type="Animation" id="Animation_xsf02"]
+resource_name = "Sigma boy skibidi toilet"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(192, -37), Vector2(503, -41)]
+}
+
+[sub_resource type="Animation" id="Animation_3jfg3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(192, -37)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4ktui"]
+_data = {
+"RESET": SubResource("Animation_3jfg3"),
+"Sigma boy skibidi toilet": SubResource("Animation_xsf02")
+}
+
+[sub_resource type="Animation" id="Animation_gr2ga"]
+resource_name = "simga bpiiii"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(190, -2), Vector2(513, -5)]
+}
+
+[sub_resource type="Animation" id="Animation_wsvbl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(190, -2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_heteb"]
+_data = {
+"RESET": SubResource("Animation_wsvbl"),
+"simga bpiiii": SubResource("Animation_gr2ga")
+}
+
 [node name="Neptune" type="Node2D"]
 
+[node name="Screenshot2026-02-26At12_05_24" type="Sprite2D" parent="."]
+position = Vector2(1752.36, -162)
+scale = Vector2(0.493801, 1.16612)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_23" type="Sprite2D" parent="."]
+position = Vector2(1231.74, -85.5)
+scale = Vector2(0.469122, 0.907166)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="."]
+position = Vector2(706.972, 4.45715)
+scale = Vector2(0.500051, 0.607631)
+texture = ExtResource("1_6a7sl")
+
 [node name="Screenshot2026-02-26At12_05_21" type="Sprite2D" parent="."]
-position = Vector2(173, 7)
-scale = Vector2(0.489852, 0.604235)
+position = Vector2(173.25, 1.25009)
+scale = Vector2(0.490313, 0.622964)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="."]
@@ -284,4 +373,20 @@ position = Vector2(-128, -27)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platform"]
 libraries = {
 "": SubResource("AnimationLibrary_qu1oj")
+}
+
+[node name="platform2" parent="." instance=ExtResource("3_l4bcc")]
+position = Vector2(192, -37)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platform2"]
+libraries = {
+"": SubResource("AnimationLibrary_4ktui")
+}
+
+[node name="platform3" parent="." instance=ExtResource("3_l4bcc")]
+position = Vector2(190, -2)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platform3"]
+libraries = {
+"": SubResource("AnimationLibrary_heteb")
 }
