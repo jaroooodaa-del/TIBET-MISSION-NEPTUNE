@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvnqt6xaa1du1"]
+[gd_scene load_steps=6 format=3 uid="uid://bvnqt6xaa1du1"]
 
 [ext_resource type="Script" path="res://Patrick/player_ship.gd" id="1_0o0g7"]
 [ext_resource type="Texture2D" uid="uid://fmhrel7wfmke" path="res://spaceships_vol2/PNG/BLUE/large_2.png" id="2_3gwt3"]
+[ext_resource type="PackedScene" uid="uid://c8o10utsncsce" path="res://Patrick/Bullet.tscn" id="2_to02h"]
 [ext_resource type="Texture2D" uid="uid://n1aycbykxy2" path="res://spaceships_vol2/PNG/BLUE/laser_turret.png" id="3_xiiid"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3u2vu"]
@@ -13,6 +14,7 @@ position = Vector2(569, 544)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_0o0g7")
+bullet_scene = ExtResource("2_to02h")
 
 [node name="Large2" type="Sprite2D" parent="."]
 position = Vector2(-0.999999, 3.63798e-12)
@@ -46,7 +48,6 @@ position = Vector2(1626, 706)
 
 [node name="ShootTimer" type="Timer" parent="."]
 wait_time = 0.5
-one_shot = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.20001, -7.79999)

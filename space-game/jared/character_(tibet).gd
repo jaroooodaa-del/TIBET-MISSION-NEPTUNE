@@ -56,3 +56,24 @@ func _physics_process(delta: float) -> void:
 		sprite.stop() 
 
 	move_and_slide()
+	
+	
+	
+func faster_fire_rate():
+	print("Power-up received! Rapid fire active.")
+	if has_node("ShootTimer"):
+		var timer = get_node("ShootTimer")
+		
+		# 1. Save the old speed so we can go back to it
+		var original_speed = timer.wait_time 
+		
+		# 2. Set the new fast speed
+		timer.wait_time = 0.1
+		timer.start()
+		
+		# 3. Wait for 5 seconds in the background
+		await get_tree().create_timer(5.0).timeout
+		
+		# 4. Set it back to normal
+		timer.wait_time = original_speed
+		print("Power-up expired. Back to normal.")
