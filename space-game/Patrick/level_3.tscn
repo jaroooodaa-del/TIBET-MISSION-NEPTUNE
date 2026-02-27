@@ -23,3 +23,6 @@ powerup_scene = ExtResource("4_ao32a")
 [node name="Area2D" parent="." instance=ExtResource("4_ao32a")]
 position = Vector2(586, 378)
 scale = Vector2(5, 5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(593, 419)

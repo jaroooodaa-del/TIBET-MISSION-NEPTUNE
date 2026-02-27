@@ -3,16 +3,14 @@ extends Area2D
 @export var speed: float = 600.0
 
 func _process(delta):
-	# Move up (negative Y direction in Godot 2D)
+	# Move the bullet
 	position.y -= speed * delta
 	
-	# Automatically remove the bullet once it goes off the top of the screen
-	if position.y < -50:
-		queue_free()
+	# DEBUG: Print the position to see where it's going
+	# print("Bullet Y: ", position.y)
 
-# This handles hitting an enemy (if you have an enemy group set up)
-func _on_body_entered(body):
-	if body.is_in_group("enemies"):
-		if body.has_method("take_damage"):
-			body.take_damage()
-		queue_free() # Destroy bullet on impact
+	# FIX: Make sure this number isn't killing the bullet too early
+	# If your screen is 1080 high, and the bullet starts at 500, 
+	# setting this to > 0 will kill it instantly!
+	if position.y < -500: 
+		queue_free()

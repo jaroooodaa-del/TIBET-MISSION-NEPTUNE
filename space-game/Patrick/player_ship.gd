@@ -21,6 +21,7 @@ func _physics_process(_delta):
 
 	# 2. HOLD SPACE TO SHOOT
 	if Input.is_action_pressed("ui_accept"):
+		#print("spacebar pressed")
 		if $ShootTimer.is_stopped():
 			shoot()            
 			$ShootTimer.start() 
@@ -29,11 +30,11 @@ func _physics_process(_delta):
 
 func shoot():
 	if bullet_scene:
-		# Shooting from multiple muzzles at once
 		if has_node("Muzzles"):
 			for muzzle in $Muzzles.get_children():
 				var bullet = bullet_scene.instantiate()
 				bullet.global_position = muzzle.global_position
+				print("Bullet spawned at: ", bullet.global_position) # New debug line
 				get_tree().current_scene.add_child(bullet)
 		else:
 			# Fallback if Muzzles node is missing

@@ -25,27 +25,6 @@ texture = ExtResource("2_3gwt3")
 position = Vector2(-2, 104)
 texture = ExtResource("3_xiiid")
 
-[node name="Muzzles" type="Container" parent="Large2"]
-offset_left = -1372.0
-offset_top = -939.0
-offset_right = -1332.0
-offset_bottom = -899.0
-
-[node name="Muzzle2D" type="Marker2D" parent="Large2/Muzzles"]
-position = Vector2(1374, 928)
-
-[node name="Muzzle2D2" type="Marker2D" parent="Large2/Muzzles"]
-position = Vector2(1122, 698)
-
-[node name="Muzzle2D3" type="Marker2D" parent="Large2/Muzzles"]
-position = Vector2(1158, 751)
-
-[node name="Muzzle2D4" type="Marker2D" parent="Large2/Muzzles"]
-position = Vector2(1589, 749)
-
-[node name="Muzzle2D5" type="Marker2D" parent="Large2/Muzzles"]
-position = Vector2(1626, 706)
-
 [node name="ShootTimer" type="Timer" parent="."]
 wait_time = 0.5
 
@@ -53,3 +32,24 @@ wait_time = 0.5
 position = Vector2(-1.20001, -7.79999)
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_3u2vu")
+
+[node name="Muzzles" type="Container" parent="."]
+offset_left = -275.4
+offset_top = -187.8
+offset_right = -235.4
+offset_bottom = -147.8
+
+[node name="Muzzle2D" type="Marker2D" parent="Muzzles"]
+position = Vector2(1374, 928)
+
+[node name="Muzzle2D2" type="Marker2D" parent="Muzzles"]
+position = Vector2(1122, 698)
+
+[node name="Muzzle2D3" type="Marker2D" parent="Muzzles"]
+position = Vector2(1158, 751)
+
+[node name="Muzzle2D4" type="Marker2D" parent="Muzzles"]
+position = Vector2(1589, 749)
+
+[node name="Muzzle2D5" type="Marker2D" parent="Muzzles"]
+position = Vector2(1626, 706)
