@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bhtofaohi1wps"]
 
 [ext_resource type="Script" path="res://jared/character_(tibet).gd" id="1_bgtd3"]
-[ext_resource type="Texture2D" uid="uid://donllujnbk4wn" path="res://jared/Download (2).png" id="1_cukb5"]
+[ext_resource type="Texture2D" uid="uid://jkxg5mxpncmo" path="res://jared/Download (2).png" id="1_cukb5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_036e2"]
 atlas = ExtResource("1_cukb5")
