@@ -249,6 +249,21 @@ _data = {
 "sigma boiii": SubResource("Animation_r6vlm")
 }
 
+[sub_resource type="Animation" id="Animation_3jfg3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(192, -37)]
+}
+
 [sub_resource type="Animation" id="Animation_xsf02"]
 resource_name = "Sigma boy skibidi toilet"
 loop_mode = 2
@@ -265,7 +280,13 @@ tracks/0/keys = {
 "values": [Vector2(192, -37), Vector2(503, -41)]
 }
 
-[sub_resource type="Animation" id="Animation_3jfg3"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4ktui"]
+_data = {
+"RESET": SubResource("Animation_3jfg3"),
+"Sigma boy skibidi toilet": SubResource("Animation_xsf02")
+}
+
+[sub_resource type="Animation" id="Animation_wsvbl"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -277,13 +298,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(192, -37)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4ktui"]
-_data = {
-"RESET": SubResource("Animation_3jfg3"),
-"Sigma boy skibidi toilet": SubResource("Animation_xsf02")
+"values": [Vector2(190, -2)]
 }
 
 [sub_resource type="Animation" id="Animation_gr2ga"]
@@ -300,21 +315,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(190, -2), Vector2(513, -5)]
-}
-
-[sub_resource type="Animation" id="Animation_wsvbl"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(190, -2)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_heteb"]

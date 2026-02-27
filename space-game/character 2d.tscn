@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ciwn7fqk4j5ct"]
+[gd_scene load_steps=24 format=3 uid="uid://ciwn7fqk4j5ct"]
 
 [ext_resource type="Texture2D" uid="uid://bvt32lsrrvamt" path="res://jared/Gemini_Generated_Image_v5uk3ov5uk3ov5uk-removebg-preview.png" id="1_8g6sl"]
 [ext_resource type="Texture2D" uid="uid://c3ukfh35q6630" path="res://jared/Gemini_Generated_Image_byq0adbyq0adbyq0 (1).png" id="2_6bds2"]
@@ -145,16 +145,16 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=123044144]
+[node name="CharacterBody2D" type="CharacterBody2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=166181494]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -53.5)
-scale = Vector2(0.24444446, 0.26717556)
+scale = Vector2(0.244444, 0.267176)
 sprite_frames = SubResource("SpriteFrames_abvbm")
-frame_progress = 0.60601085
+frame_progress = 0.606011
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1588824051]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -53.5)
-scale = Vector2(0.24444446, 0.26717556)
+scale = Vector2(0.244444, 0.267176)
 sprite_frames = SubResource("SpriteFrames_abvbm")
-frame_progress = 0.8798142
+frame_progress = 0.879814
