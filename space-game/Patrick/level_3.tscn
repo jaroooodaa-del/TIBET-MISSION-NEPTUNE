@@ -1,24 +1,24 @@
-extends Node2D
+[gd_scene load_steps=5 format=3 uid="uid://37brf861ufd"]
 
-@export var powerup_scene: PackedScene
+[ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_x2wrt"]
+[ext_resource type="PackedScene" uid="uid://bvnqt6xaa1du1" path="res://Patrick/PlayerShip.tscn" id="2_0bhu3"]
+[ext_resource type="PackedScene" uid="uid://xxyv7rxgwgvc" path="res://Patrick/powerup_spawner.tscn" id="3_dlo0c"]
+[ext_resource type="PackedScene" uid="uid://c3x3hdsa3tpwr" path="res://Patrick/fire_rate_power_up.tscn" id="4_ao32a"]
 
-func _on_timer_timeout():
-	if powerup_scene == null:
-		print("ERROR: No powerup_scene assigned in Inspector!")
-		return
-		
-	# 1. Create the instance
-	var powerup = powerup_scene.instantiate()
-	
-	# 2. Calculate Screen Position
-	var screen_width = get_viewport_rect().size.x
-	var random_x = randf_range(50, screen_width - 50)
-	
-	# 3. Use GLOBAL position to ensure it spawns at the very top of the game window
-	# This fixes the conflict where it spawns relative to the spawner's center
-	powerup.global_position = Vector2(random_x, -50)
-	
-	# 4. Add to the main scene tree so it isn't hidden behind the spawner's logic
-	get_tree().current_scene.add_child(powerup)
-	
-	print("SUCCESS: Power-up spawned at Top Y: -50")
+[node name="Level 3" type="Node2D"]
+
+[node name="Screenshot2026-02-26At12_05_21" type="Sprite2D" parent="."]
+position = Vector2(507, 407)
+scale = Vector2(1.5, 1.76)
+texture = ExtResource("1_x2wrt")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_0bhu3")]
+position = Vector2(584, 545)
+scale = Vector2(1.00457, 0.956049)
+
+[node name="PowerupSpawner" parent="." instance=ExtResource("3_dlo0c")]
+position = Vector2(585, 376)
+powerup_scene = ExtResource("4_ao32a")
+
+[node name="Area2D" parent="." instance=ExtResource("4_ao32a")]
+position = Vector2(192, 537)
