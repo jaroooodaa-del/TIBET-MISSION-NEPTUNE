@@ -10,7 +10,7 @@ func _process(delta):
 # This function is triggered by the Signal
 func _on_body_entered(body):
 	# Check if the thing we hit is the Player
-	if body.has_method("upgrade_fire_rate"):
-		body.upgrade_fire_rate() # Call the function on the player
+	if body.has_method("faster_fire_rate"):
+		body.faster_fire_rate() # Call the function on the player
 		print("COLLECTED: Power-up disappeared!")
 		queue_free() # Remove the power-up from the game
