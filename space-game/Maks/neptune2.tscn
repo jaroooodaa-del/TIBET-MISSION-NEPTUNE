@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=4 uid="uid://bdoc563hsfr7m"]
+[gd_scene load_steps=16 format=4 uid="uid://bdoc563hsfr7m"]
 
 [ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_6a7sl"]
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="2_i17ee"]
 [ext_resource type="PackedScene" uid="uid://cmixdu2f1dr6e" path="res://platform.tscn" id="3_l4bcc"]
 [ext_resource type="PackedScene" uid="uid://bhtofaohi1wps" path="res://jared/character (tibet).tscn" id="5_kjqlq"]
+[ext_resource type="PackedScene" uid="uid://dlxtetrb2ahyd" path="res://Maks/killzone.tscn" id="6_xqfgw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcv78"]
 texture = ExtResource("2_i17ee")
@@ -250,6 +251,9 @@ _data = {
 "new_animation": SubResource("Animation_gynqo")
 }
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2jcpq"]
+distance = -110.0
+
 [node name="Neptune" type="Node2D"]
 
 [node name="Screenshot2026-02-26At12_05_24" type="Sprite2D" parent="."]
@@ -318,3 +322,9 @@ position = Vector2(-584, -23)
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-1, 0)
 zoom = Vector2(4, 4)
+
+[node name="Killzone" parent="." instance=ExtResource("6_xqfgw")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-503, 89)
+shape = SubResource("WorldBoundaryShape2D_2jcpq")
