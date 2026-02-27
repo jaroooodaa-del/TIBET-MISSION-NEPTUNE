@@ -257,8 +257,8 @@ distance = -110.0
 [node name="Neptune" type="Node2D" unique_id=809454802]
 
 [node name="Screenshot2026-02-26At12_05_24" type="Sprite2D" parent="." unique_id=1847984399]
-position = Vector2(1997.86, 80.00061)
-scale = Vector2(0.94675285, 1.9543955)
+position = Vector2(2235.8599, 176.00058)
+scale = Vector2(1.3858671, 2.267099)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_23" type="Sprite2D" parent="." unique_id=1853286868]
@@ -267,8 +267,8 @@ scale = Vector2(0.81598175, 1.8908771)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="." unique_id=1235056054]
-position = Vector2(867.47217, 104.000435)
-scale = Vector2(0.79617685, 1.9055362)
+position = Vector2(1102.4722, 191.50041)
+scale = Vector2(1.2297562, 2.1905525)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_21" type="Sprite2D" parent="." unique_id=2031339862]
@@ -277,8 +277,8 @@ scale = Vector2(0.90451986, 1.9104223)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="." unique_id=1901854278]
-position = Vector2(-321.12506, 101.99954)
-scale = Vector2(1.1154022, 1.877024)
+position = Vector2(-107.62506, 190.99957)
+scale = Vector2(1.505713, 2.16505)
 texture = ExtResource("1_pcofo")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=893970912]
