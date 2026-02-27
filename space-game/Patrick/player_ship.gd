@@ -1,45 +1,60 @@
 extends CharacterBody2D
 
 @export var speed: float = 400.0
-@export var bullet_scene: PackedScene # Drag your bullet.tscn here in the Inspector
+@export var bullet_scene: PackedScene 
 
 func _physics_process(_delta):
-	# 1. Movement Logic
-	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = direction * speed
-	move_and_slide()
+	# 1. FOLLOW MOUSE MOVEMENT
+	var mouse_pos = get_global_mouse_position()
+	
+	# Calculate direction toward mouse
+	var direction = (mouse_pos - global_position).normalized()
+	
+	# Only move if the mouse is further than 5 pixels away (prevents "jittering")
+	if global_position.distance_to(mouse_pos) > 5:
+		velocity = direction * speed
+		move_and_slide()
+	
+	# OPTIONAL: Make the ship rotate to face the mouse
+	# look_at(mouse_pos)
+	# rotation_degrees += 90 # Adjust this if your sprite faces the wrong way
 
-	# 2. Shooting Logic (Hold Space to Shoot)
+	# 2. HOLD SPACE TO SHOOT
 	if Input.is_action_pressed("ui_accept"):
 		if $ShootTimer.is_stopped():
-			shoot()            # Fire the first bullet immediately
-			$ShootTimer.start() # Start the interval for holding down the key
+			shoot()            
+			$ShootTimer.start() 
 	else:
-		$ShootTimer.stop()     # Stop firing when key is released
+		$ShootTimer.stop()     
 
 func shoot():
 	if bullet_scene:
-		var bullet = bullet_scene.instantiate()
-		# Set bullet starting position to the ship's position
-		bullet.global_position = global_position 
-		# Add bullet to the main game scene so it moves independently of the ship
-		get_tree().current_scene.add_child(bullet)
+		# Shooting from multiple muzzles at once
+		if has_node("Muzzles"):
+			for muzzle in $Muzzles.get_children():
+				var bullet = bullet_scene.instantiate()
+				bullet.global_position = muzzle.global_position
+				get_tree().current_scene.add_child(bullet)
+		else:
+			# Fallback if Muzzles node is missing
+			var bullet = bullet_scene.instantiate()
+			bullet.global_position = global_position
+			get_tree().current_scene.add_child(bullet)
 
 func die():
 	print("Player Destroyed!")
 	get_tree().reload_current_scene()
 
-# This is called by the Power-up Area2D
+# POWER-UP SYSTEM
 func faster_fire_rate():
-	print("Power-up received! Shooting faster now.")
-	
+	print("Power-up received! Rapid fire active.")
 	if has_node("ShootTimer"):
 		var timer = $ShootTimer
 		var original_speed = timer.wait_time
 		
-		timer.wait_time = 0.1 # Rapid fire speed
+		timer.wait_time = 0.1 # High-speed fire
 		
-		# Optional: This makes the power-up last for 5 seconds
+		# Power-up lasts for 5 seconds
 		await get_tree().create_timer(5.0).timeout
 		
 		timer.wait_time = original_speed
