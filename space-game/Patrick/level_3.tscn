@@ -6,10 +6,10 @@
 [node name="Level 3" type="Node2D"]
 
 [node name="Screenshot2026-02-26At12_05_21" type="Sprite2D" parent="."]
-position = Vector2(1111, 523)
-scale = Vector2(4.056, 4.71837)
-texture = ExtResource("1_i0mln")
+position = Vector2(507, 407)
+scale = Vector2(1.5, 1.76)
+texture = ExtResource("1_x2wrt")
 
-[node name="CharacterBody2D" parent="Screenshot2026-02-26At12_05_21" instance=ExtResource("2_nycqq")]
-position = Vector2(-273.176, -129.6)
-scale = Vector2(0.246548, 0.2)
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_0bhu3")]
+position = Vector2(584, 545)
+scale = Vector2(1.00457, 0.956049)
