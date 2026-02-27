@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://bhtofaohi1wps"]
+[gd_scene load_steps=11 format=3 uid="uid://bhtofaohi1wps"]
 
+[ext_resource type="Script" path="res://jared/character_(tibet).gd" id="1_bgtd3"]
 [ext_resource type="Texture2D" uid="uid://donllujnbk4wn" path="res://jared/Download (2).png" id="1_cukb5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_036e2"]
@@ -28,6 +29,11 @@ region = Rect2(96, 64, 48, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_abvbm"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"jump_anim",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_036e2")
@@ -58,14 +64,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wlj2w"]
-radius = 3.0
-height = 14.0
+radius = 4.0
+height = 22.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_bgtd3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -2)
-scale = Vector2(0.244444, 0.267176)
+position = Vector2(2.38419e-07, -2)
+scale = Vector2(0.393055, 0.375)
 sprite_frames = SubResource("SpriteFrames_abvbm")
 animation = &"move_right_anim"
 
