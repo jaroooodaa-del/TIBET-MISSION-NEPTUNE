@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://oxhxd0gilxaa"]
+[gd_scene load_steps=9 format=4 uid="uid://oxhxd0gilxaa"]
 
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="1_2i62u"]
 [ext_resource type="Texture2D" uid="uid://b2tjsrl3tefk1" path="res://Patrick/wmremove-transformed.jpg" id="1_oe65y"]
 [ext_resource type="PackedScene" uid="uid://bhtofaohi1wps" path="res://jared/character (tibet).tscn" id="3_dqdr1"]
+[ext_resource type="PackedScene" uid="uid://dlxtetrb2ahyd" path="res://Maks/killzone.tscn" id="4_ftuvr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o4377"]
 texture = ExtResource("1_2i62u")
@@ -177,6 +178,8 @@ sources/0 = SubResource("TileSetAtlasSource_o4377")
 
 [sub_resource type="LabelSettings" id="LabelSettings_htjuj"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yafhd"]
+
 [node name="Uranus" type="Node2D"]
 
 [node name="Wmremove-transformed" type="Sprite2D" parent="."]
@@ -251,6 +254,12 @@ label_settings = SubResource("LabelSettings_htjuj")
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_dqdr1")]
 position = Vector2(-733, -100)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-734, -98)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-1, 2)
 zoom = Vector2(4, 4)
+
+[node name="Killzone" parent="." instance=ExtResource("4_ftuvr")]
+position = Vector2(-464, 70)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_yafhd")
