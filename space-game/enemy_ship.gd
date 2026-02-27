@@ -1,34 +1,36 @@
 extends CharacterBody2D
 
-# --- Variables ---
 @export var speed: float = 200.0
 @export var health: int = 2
 @export var damage_value: int = 1
 
-func _physics_process(delta):
-	# Basic enemy movement: Fly downwards toward the player
-	# You can change Vector2.DOWN to move in different directions
+func _ready():
+	# Add to group so the Bullet can find it easily
+	add_to_group("enemies")
+
+func _physics_process(_delta):
+	# Move straight down
 	velocity = Vector2.DOWN * speed
 	move_and_slide()
+	
+	# Delete if it flies past the player (off-bottom)
+	if global_position.y > 1100:
+		queue_free()
 
-# This function is called by the Bullet when it hits this enemy
-func take_damage(amount: int):
+# Matches the Bullet script's call
+func take_damage(amount: int = 1):
 	health -= amount
-	print("Enemy hit! Health remaining: ", health)
-	
-	# Add a brief visual flash here later!
-	
 	if health <= 0:
 		die()
 
 func die():
-	# Replace this with an explosion effect later
 	print("Enemy destroyed!")
 	queue_free()
 
-# --- Optional: Damage the player on contact ---
-# If your enemy has an Area2D "Hitbox" child, connect its body_entered signal here
+# Connect this from an Area2D child node named "Hitbox"
 func _on_hitbox_body_entered(body):
-	if body.name == "PlayerShip" or body.has_method("take_damage"):
-		body.take_damage(damage_value)
-		die() # Enemy explodes on impact
+	if body.has_method("die"):
+		body.die()
+		die()
+		
+		

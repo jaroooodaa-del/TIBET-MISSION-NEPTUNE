@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://37brf861ufd"]
+[gd_scene load_steps=6 format=3 uid="uid://37brf861ufd"]
 
 [ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_x2wrt"]
 [ext_resource type="PackedScene" uid="uid://bvnqt6xaa1du1" path="res://Patrick/PlayerShip.tscn" id="2_0bhu3"]
 [ext_resource type="PackedScene" uid="uid://xxyv7rxgwgvc" path="res://Patrick/powerup_spawner.tscn" id="3_dlo0c"]
 [ext_resource type="PackedScene" uid="uid://c3x3hdsa3tpwr" path="res://Patrick/fire_rate_power_up.tscn" id="4_ao32a"]
+[ext_resource type="PackedScene" uid="uid://2o51pik1tdvk" path="res://Patrick/EnemyShipSpawner.tscn" id="5_7v6pg"]
 
 [node name="Level 3" type="Node2D"]
 
@@ -26,3 +27,6 @@ scale = Vector2(5, 5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(593, 419)
+
+[node name="Node2D" parent="." groups=["enemies"] instance=ExtResource("5_7v6pg")]
+position = Vector2(283, 125)
