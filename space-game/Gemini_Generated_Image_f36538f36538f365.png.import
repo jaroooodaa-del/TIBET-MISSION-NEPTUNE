@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< Updated upstream
-uid="uid://donllujnbk4wn"
-=======
-uid="uid://c30hhbqngna87"
->>>>>>> Stashed changes
-path="res://.godot/imported/Download (2).png-21439eac9e41c025148edc80c20cb231.ctex"
+uid="uid://42smkyqy64ds"
+path="res://.godot/imported/Gemini_Generated_Image_f36538f36538f365.png-7019b541415133b1b089057134d7f892.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://jared/Download (2).png"
-dest_files=["res://.godot/imported/Download (2).png-21439eac9e41c025148edc80c20cb231.ctex"]
+source_file="res://Gemini_Generated_Image_f36538f36538f365.png"
+dest_files=["res://.godot/imported/Gemini_Generated_Image_f36538f36538f365.png-7019b541415133b1b089057134d7f892.ctex"]
 
 [params]
 
