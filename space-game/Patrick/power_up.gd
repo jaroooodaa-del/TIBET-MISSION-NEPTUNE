@@ -1,17 +1,16 @@
 extends Area2D
 
-@export var speed: float = 200.0
+@export var speed: float = 250.0
 
 func _process(delta):
-	# This line makes it fall down into view!
 	position.y += speed * delta
-	
-	# Deletes it if it goes past the bottom so your game stays fast
 	if position.y > 1100:
 		queue_free()
 
+# This function is triggered by the Signal
 func _on_body_entered(body):
-	# Checks if the player touched it
+	# Check if the thing we hit is the Player
 	if body.has_method("upgrade_fire_rate"):
-		body.upgrade_fire_rate()
-		queue_free() # Remove from screen after collection
+		body.upgrade_fire_rate() # Call the function on the player
+		print("COLLECTED: Power-up disappeared!")
+		queue_free() # Remove the power-up from the game
