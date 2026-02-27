@@ -285,3 +285,7 @@ position = Vector2(-128, -27)
 libraries = {
 "": SubResource("AnimationLibrary_qu1oj")
 }
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
