@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://bhtofaohi1wps"]
+[gd_scene format=3 uid="uid://bhtofaohi1wps"]
 
-[ext_resource type="Script" path="res://jared/character_(tibet).gd" id="1_bgtd3"]
+[ext_resource type="Script" uid="uid://cby0t4rj7wlvx" path="res://jared/character_(tibet).gd" id="1_bgtd3"]
 [ext_resource type="Texture2D" uid="uid://jkxg5mxpncmo" path="res://jared/Download (2).png" id="1_cukb5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_036e2"]
@@ -67,14 +67,17 @@ animations = [{
 radius = 4.0
 height = 22.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1769388287]
 script = ExtResource("1_bgtd3")
+speed = null
+jump_force = null
+gravity = null
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1024406204]
 position = Vector2(2.38419e-07, -2)
 scale = Vector2(0.393055, 0.375)
 sprite_frames = SubResource("SpriteFrames_abvbm")
 animation = &"move_right_anim"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47700683]
 shape = SubResource("CapsuleShape2D_wlj2w")
