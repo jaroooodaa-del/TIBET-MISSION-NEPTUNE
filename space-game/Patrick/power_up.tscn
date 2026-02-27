@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ub422d0f6mnh"]
+[gd_scene load_steps=4 format=3 uid="uid://ub422d0f6mnh"]
 
 [ext_resource type="Texture2D" uid="uid://dqvjb5qq4f6ld" path="res://Patrick/SpaceShooterAssetPack_Projectiles.png" id="1_6c5av"]
 [ext_resource type="Script" path="res://Patrick/power_up.gd" id="1_rycun"]
@@ -16,5 +16,7 @@ texture = ExtResource("1_6c5av")
 region_enabled = true
 region_rect = Rect2(14.7517, 7.76481, 10.2165, 9.01456)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpaceShooterAssetPackProjectiles"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(110, 97)
+scale = Vector2(10, 10)
 shape = SubResource("CircleShape2D_jlr0s")

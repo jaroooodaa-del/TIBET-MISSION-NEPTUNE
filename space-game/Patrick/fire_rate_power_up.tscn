@@ -8,15 +8,15 @@ radius = 4.67856
 
 [node name="Area2D" type="Area2D"]
 scale = Vector2(3, 3)
-collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_dxoux")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0f1y8")
 
 [node name="SpaceShooterAssetPackProjectiles" type="Sprite2D" parent="."]
 texture = ExtResource("1_wweha")
 region_enabled = true
 region_rect = Rect2(15.5701, 7.66376, 8.92981, 9.22259)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpaceShooterAssetPackProjectiles"]
-shape = SubResource("CircleShape2D_0f1y8")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
