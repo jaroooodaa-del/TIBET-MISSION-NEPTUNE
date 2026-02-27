@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 [gd_scene format=3 uid="uid://dmo1ddlu34do7"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://37brf861ufd"]
+>>>>>>> 21087e7e249462244fe951aa65167e87ceed99de
 
-[ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_i0mln"]
-[ext_resource type="PackedScene" path="res://Patrick/PlayerShip.tscn" id="2_nycqq"]
+[ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_x2wrt"]
+[ext_resource type="PackedScene" uid="uid://bvnqt6xaa1du1" path="res://Patrick/PlayerShip.tscn" id="2_0bhu3"]
 
 [node name="Level 3" type="Node2D"]
 
