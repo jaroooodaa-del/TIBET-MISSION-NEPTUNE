@@ -179,6 +179,7 @@ sources/0 = SubResource("TileSetAtlasSource_o4377")
 [sub_resource type="LabelSettings" id="LabelSettings_htjuj"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yafhd"]
+distance = -1.0
 
 [node name="Uranus" type="Node2D"]
 
@@ -262,4 +263,5 @@ zoom = Vector2(4, 4)
 position = Vector2(-464, 70)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, 2)
 shape = SubResource("WorldBoundaryShape2D_yafhd")

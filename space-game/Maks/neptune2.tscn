@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bdoc563hsfr7m"]
+[gd_scene load_steps=17 format=4 uid="uid://bdoc563hsfr7m"]
 
 [ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_6a7sl"]
 [ext_resource type="Texture2D" uid="uid://8y74jry0v122" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.04.png" id="1_pcofo"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cmixdu2f1dr6e" path="res://platform.tscn" id="3_l4bcc"]
 [ext_resource type="PackedScene" uid="uid://bhtofaohi1wps" path="res://jared/character (tibet).tscn" id="5_kjqlq"]
 [ext_resource type="PackedScene" uid="uid://dlxtetrb2ahyd" path="res://Maks/killzone.tscn" id="6_xqfgw"]
+[ext_resource type="PackedScene" uid="uid://m740vq3whku1" path="res://Maks/enemy 2.tscn" id="7_oew2u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcv78"]
 texture = ExtResource("2_i17ee")
@@ -277,7 +278,7 @@ scale = Vector2(0.490313, 1.08876)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="."]
-position = Vector2(-508.75, -142)
+position = Vector2(-509, -143)
 scale = Vector2(0.773766, 1.09709)
 texture = ExtResource("1_pcofo")
 
@@ -328,3 +329,9 @@ zoom = Vector2(4, 4)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-503, 89)
 shape = SubResource("WorldBoundaryShape2D_2jcpq")
+
+[node name="Node2D" parent="." instance=ExtResource("7_oew2u")]
+position = Vector2(-388, -15)
+
+[node name="Node2D2" parent="." instance=ExtResource("7_oew2u")]
+position = Vector2(26, -33)
