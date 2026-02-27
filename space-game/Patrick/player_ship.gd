@@ -58,5 +58,11 @@ func take_damage(amount: int):
 
 func die():
 	print("Player Destroyed!")
-	# Restarts the current level
 	get_tree().reload_current_scene()
+
+func faster_fire_rate():
+	print("Power-up received! Shooting faster now.")
+	if has_node("ShootTimer"):
+		var timer = get_node("ShootTimer")
+		timer.wait_time = 0.1 
+		timer.start()
