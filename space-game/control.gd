@@ -13,3 +13,14 @@ func _on_neptune_button_pressed():
 
 #func _on_astroid_button_pressed():
 	#//get_tree().change_scene_to_file("res://levels/kuiper_belt.tscn")
+
+
+func _on_uranus_button_pressed() -> void:
+	print("clicked")
+	get_tree().change_scene_to_file("res://Patrick/uranus.tscn")	
+	
+
+
+func _on_astroid_button_pressed() -> void:
+	print("clicked")
+	get_tree().change_scene_to_file("res://Patrick/level_3.tscn")	

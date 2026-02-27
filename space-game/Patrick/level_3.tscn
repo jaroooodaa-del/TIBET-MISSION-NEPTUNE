@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmo1ddlu34do7"]
+
+[ext_resource type="Texture2D" uid="uid://w1hbwqos35su" path="res://Maks/brackeys_platformer_assets 2/sprites/Screenshot 2026-02-26 at 12.05.21.png" id="1_i0mln"]
+[ext_resource type="PackedScene" path="res://Patrick/PlayerShip.tscn" id="2_nycqq"]
+
+[node name="Level 3" type="Node2D"]
+
+[node name="Screenshot2026-02-26At12_05_21" type="Sprite2D" parent="."]
+position = Vector2(507, 407)
+scale = Vector2(1.5, 1.76)
+texture = ExtResource("1_x2wrt")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_0bhu3")]
+position = Vector2(584, 545)
+scale = Vector2(1.00457, 0.956049)
