@@ -74,7 +74,9 @@ script = ExtResource("1_bgtd3")
 position = Vector2(2.38419e-07, -2)
 scale = Vector2(0.393055, 0.375)
 sprite_frames = SubResource("SpriteFrames_abvbm")
-animation = &"jump_anim"
+animation = &"move_left_anim"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47700683]
 shape = SubResource("CapsuleShape2D_wlj2w")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1054414416]
