@@ -1,10 +1,8 @@
 extends CharacterBody2D
 
-@export var speed := 250
-@export var jump_force := -420
-@export var gravity := 900
-
-@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@export var speed: float = 250.0
+@export var jump_force: float = -420.0
+@export var gravity: float = 900.0
 
 func _physics_process(delta):
 	# Gravity
@@ -20,14 +18,3 @@ func _physics_process(delta):
 		velocity.y = jump_force
 
 	move_and_slide()
-
-	_update_animation(direction)
-
-func _update_animation(direction):
-	if not is_on_floor():
-		sprite.play("jump")
-	elif direction != 0:
-		sprite.play("run")
-		sprite.flip_h = direction < 0
-	else:
-		sprite.play("idle")x
