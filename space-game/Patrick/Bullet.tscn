@@ -8,10 +8,13 @@ radius = 14.0065
 height = 172.042
 
 [node name="Bullet" type="Area2D"]
+z_index = 10
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_fmu4d")
 
 [node name="RedLaser" type="Sprite2D" parent="."]
-position = Vector2(1539, 929)
+position = Vector2(-2216, -1488)
+rotation = 4.71239
 texture = ExtResource("1_kk514")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RedLaser"]
