@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cuveyc8fdvwic"]
+[gd_scene format=3 uid="uid://cuveyc8fdvwic"]
 
 [ext_resource type="Texture2D" uid="uid://bxneigecn1oe1" path="res://stars_glare_space_dark_blue_sky_background_4k_hd_space.jpg" id="1_1i3fl"]
 
-[node name="Background" type="Node2D"]
+[node name="Background" type="Node2D" unique_id=1820220994]
 
-[node name="StarsGlareSpaceDarkBlueSkyBackground4kHdSpace" type="Sprite2D" parent="."]
+[node name="StarsGlareSpaceDarkBlueSkyBackground4kHdSpace" type="Sprite2D" parent="." unique_id=71743766]
 position = Vector2(0, -4)
 texture = ExtResource("1_1i3fl")

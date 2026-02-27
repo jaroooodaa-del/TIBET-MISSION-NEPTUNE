@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://oxhxd0gilxaa"]
+[gd_scene format=4 uid="uid://oxhxd0gilxaa"]
 
 [ext_resource type="Texture2D" uid="uid://upnwjh2lhnqr" path="res://Maks/brackeys_platformer_assets 2/sprites/world_tileset.png" id="1_2i62u"]
 [ext_resource type="Texture2D" uid="uid://b2tjsrl3tefk1" path="res://Patrick/wmremove-transformed.jpg" id="1_oe65y"]
