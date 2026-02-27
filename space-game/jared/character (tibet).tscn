@@ -1,80 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://bhtofaohi1wps"]
+[gd_scene format=3 uid="uid://bhtofaohi1wps"]
 
-[ext_resource type="Script" path="res://jared/character_(tibet).gd" id="1_bgtd3"]
-[ext_resource type="Texture2D" uid="uid://jkxg5mxpncmo" path="res://jared/Download (2).png" id="1_cukb5"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_036e2"]
-atlas = ExtResource("1_cukb5")
-region = Rect2(0, 192, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k02kp"]
-atlas = ExtResource("1_cukb5")
-region = Rect2(48, 192, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c1mpu"]
-atlas = ExtResource("1_cukb5")
-region = Rect2(96, 192, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0pyo8"]
-atlas = ExtResource("1_cukb5")
-region = Rect2(0, 64, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8g6sl"]
-atlas = ExtResource("1_cukb5")
-region = Rect2(48, 64, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6bds2"]
-atlas = ExtResource("1_cukb5")
-region = Rect2(96, 64, 48, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_abvbm"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"jump_anim",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_036e2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k02kp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c1mpu")
-}],
-"loop": true,
-"name": &"move_left_anim",
-"speed": 6.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0pyo8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8g6sl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6bds2")
-}],
-"loop": true,
-"name": &"move_right_anim",
-"speed": 5.0
-}]
+[ext_resource type="Script" uid="uid://cby0t4rj7wlvx" path="res://jared/character_(tibet).gd" id="1_bgtd3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wlj2w"]
 radius = 4.0
 height = 22.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=167529177]
 script = ExtResource("1_bgtd3")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(2.38419e-07, -2)
-scale = Vector2(0.393055, 0.375)
-sprite_frames = SubResource("SpriteFrames_abvbm")
-animation = &"move_right_anim"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=477568704]
 shape = SubResource("CapsuleShape2D_wlj2w")
