@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8o10utsncsce"]
+
+[ext_resource type="Script" path="res://Patrick/bullet.gd" id="1_fmu4d"]
+[ext_resource type="Texture2D" uid="uid://c2ln0lwiiir8k" path="res://Patrick/Sprites - Lasers Bullets #1 [66]v2.5/Laser Sprites/14.png" id="1_kk514"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8feju"]
+radius = 14.0065
+height = 172.042
+
+[node name="Bullet" type="Node2D"]
+script = ExtResource("1_fmu4d")
+
+[node name="RedLaser" type="Sprite2D" parent="."]
+position = Vector2(1539, 929)
+texture = ExtResource("1_kk514")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedLaser"]
+position = Vector2(-9, 0)
+rotation = -1.57764
+shape = SubResource("CapsuleShape2D_8feju")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

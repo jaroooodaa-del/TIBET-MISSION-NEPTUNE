@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3x3hdsa3tpwr"]
+
+[ext_resource type="Texture2D" uid="uid://dqvjb5qq4f6ld" path="res://Patrick/SpaceShooterAssetPack_Projectiles.png" id="1_wweha"]
+
+[node name="PowerUp" type="Node2D"]
+
+[node name="SpaceShooterAssetPackProjectiles" type="Sprite2D" parent="."]
+position = Vector2(121, 109)
+texture = ExtResource("1_wweha")
+region_enabled = true
+region_rect = Rect2(15.5701, 7.66376, 8.92981, 9.22259)
