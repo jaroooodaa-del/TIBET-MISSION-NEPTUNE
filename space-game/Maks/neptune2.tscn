@@ -256,29 +256,79 @@ distance = -110.0
 
 [node name="Neptune" type="Node2D" unique_id=809454802]
 
-[node name="Screenshot2026-02-26At12_05_24" type="Sprite2D" parent="." unique_id=1847984399]
-position = Vector2(2235.8599, 176.00058)
-scale = Vector2(1.3858671, 2.267099)
-texture = ExtResource("1_6a7sl")
-
 [node name="Screenshot2026-02-26At12_05_23" type="Sprite2D" parent="." unique_id=1853286868]
 position = Vector2(1419.7379, 95.50069)
 scale = Vector2(0.81598175, 1.8908771)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="." unique_id=1235056054]
-position = Vector2(1102.4722, 191.50041)
-scale = Vector2(1.2297562, 2.1905525)
+position = Vector2(1557, -11.499588)
+scale = Vector2(1.7361623, 1.5293146)
 texture = ExtResource("1_6a7sl")
 
-[node name="Screenshot2026-02-26At12_05_21" type="Sprite2D" parent="." unique_id=2031339862]
-position = Vector2(397.75012, 110.50033)
-scale = Vector2(0.90451986, 1.9104223)
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22" unique_id=488279909]
+position = Vector2(324.27832, 616.28894)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22" unique_id=1708870898]
+position = Vector2(-891.0403, 501.8427)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22" unique_id=636915321]
+position = Vector2(-1075.9521, -815.938)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22" unique_id=692622148]
+position = Vector2(-22.161102, 466.46716)
+scale = Vector2(1.0281103, 0.9336967)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_23" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22" unique_id=19351774]
+position = Vector2(-113.27771, -1039.1416)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_23" unique_id=1022747852]
+position = Vector2(-22.161102, 466.46716)
+scale = Vector2(1.0281103, 0.9336967)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_23" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22" unique_id=1834183715]
+position = Vector2(-58.884766, -1467.5107)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_23" unique_id=679968630]
+position = Vector2(-1075.9521, -815.938)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_23/Screenshot2026-02-26At12_05_22" unique_id=623032945]
+position = Vector2(-22.161102, 466.46716)
+scale = Vector2(1.0281103, 0.9336967)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_23" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_23/Screenshot2026-02-26At12_05_22" unique_id=1346696050]
+position = Vector2(-113.27771, -1039.1416)
+scale = Vector2(1.2857219, 1.154434)
+texture = ExtResource("1_6a7sl")
+
+[node name="Screenshot2026-02-26At12_05_22" type="Sprite2D" parent="Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_23/Screenshot2026-02-26At12_05_22/Screenshot2026-02-26At12_05_23" unique_id=1358401045]
+position = Vector2(-22.161102, 466.46716)
+scale = Vector2(1.0281103, 0.9336967)
 texture = ExtResource("1_6a7sl")
 
 [node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="." unique_id=1901854278]
-position = Vector2(-107.62506, 190.99957)
-scale = Vector2(1.505713, 2.16505)
+position = Vector2(-294.50003, -12.000458)
+scale = Vector2(1.6755028, 1.508092)
+texture = ExtResource("1_pcofo")
+
+[node name="Screenshot2026-02-26At12_05_04" type="Sprite2D" parent="Screenshot2026-02-26At12_05_04" unique_id=397062469]
+position = Vector2(132.79596, 622.64136)
+scale = Vector2(1.2430978, 1.056621)
 texture = ExtResource("1_pcofo")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=893970912]
